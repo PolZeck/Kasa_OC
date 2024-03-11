@@ -1,7 +1,17 @@
-import Banner from "../../components/Banner"
+import Banner from '../../components/Banner'
+import bannerImage from '../../assets/banner-home.jpg'
+import CardContainer from '../../components/CardContainer'
 
-function Home() {
-    return <Banner/>
+const Home = () => {
+    return (
+        <>
+            <Banner
+                title="Chez vous, partout et ailleurs"
+                image={bannerImage}
+            />
+            <CardContainer />
+        </>
+    )
 }
 
 export default Home
