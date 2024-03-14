@@ -1,18 +1,8 @@
-import { Link } from 'react-router-dom'
-import './Error.css'
+import ErrorContainer from "../../components/mainComponents/ErrorContainer";
 
-function Error() {
+const Error = () => {
     return (
-        <div className="error-container">
-            <div className="error-404">404</div>
-            <p className="error-txt">
-                Oups, La page que vous demandez n'existe pas.
-            </p>
-            <Link to="/" className="error-redirection">
-                Retournez sur la page d'accueil
-            </Link>
-        </div>
+        <ErrorContainer/>
     )
 }
-
 export default Error

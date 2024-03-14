@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/logo-rouge.png'
-import './Header.css'
+import './Navbar.css'
 
-function Header() {
+function Navbar() {
     return (
         <nav>
             <img
@@ -23,4 +23,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Navbar

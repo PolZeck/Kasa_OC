@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Logement from './pages/Logement'
 import Error from './pages/Error'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import './styles/index.css'
 
@@ -15,7 +15,7 @@ const root = createRoot(rootElement)
 root.render(
     <StrictMode>
         <Router>
-            <Header />
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />

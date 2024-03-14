@@ -3,14 +3,28 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     list-style-type: none;
     text-decoration: none;
     color: #FF6060;
 }
 
-body {
-    max-width: 1920px;
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+nav,
+header {
     margin: 0 auto;
-    padding: 0 5%;
+    width: 90%;
+}
+
+main {
+    flex-grow: 1;
+    margin: 0 auto;
+    width: 90%;
 }

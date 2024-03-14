@@ -1,6 +1,6 @@
-import Banner from '../../components/Banner'
+import Banner from '../../components/headerComponents/Banner'
+import CardGallery from '../../components/mainComponents/CardGallery'
 import bannerImage from '../../assets/banner-home.jpg'
-import CardContainer from '../../components/CardContainer'
 
 const Home = () => {
     return (
@@ -9,7 +9,7 @@ const Home = () => {
                 title="Chez vous, partout et ailleurs"
                 image={bannerImage}
             />
-            <CardContainer />
+            <CardGallery />
         </>
     )
 }
