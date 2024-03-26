@@ -1,8 +1,11 @@
-import ErrorContainer from "../../components/mainComponents/ErrorContainer";
+import ErrorContent from '../../components/ErrorContent'
+import './Error.css'
 
 const Error = () => {
     return (
-        <ErrorContainer/>
+        <main className="error-main">
+            <ErrorContent />
+        </main>
     )
 }
 export default Error

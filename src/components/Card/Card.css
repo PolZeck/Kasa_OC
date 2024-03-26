@@ -1,0 +1,43 @@
+.card {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    cursor: pointer;
+    border-radius: calc(0.1rem + 1vw);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.4) 100%);
+    background-color: #FF6060;
+}
+
+.card-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: calc(0.1rem + 1vw);
+    border-top-right-radius: calc(0.1rem + 1vw);
+    object-fit: cover;
+}
+
+.card-title-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    padding: 5%;
+    border-bottom-left-radius: calc(0.1rem + 1vw);
+    border-bottom-right-radius: calc(0.1rem + 1vw);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-title-container h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 5vw;
+}
