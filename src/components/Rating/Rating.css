@@ -1,10 +1,13 @@
 .rating-ul {
-    display: flex;
+  display: flex;
 }
 
 .rating-ul li {
-    margin-right: 2vw;
+  margin-right: 2vw;
 }
-.rating-ul li img{
-    width: clamp(1rem, 2.5vw, 3rem);
+
+.rating-ul li img {
+  width: clamp(1rem, 2.5vw, 3rem);
 }
+
+/*# sourceMappingURL=Rating.css.map */

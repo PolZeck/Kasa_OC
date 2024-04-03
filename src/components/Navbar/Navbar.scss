@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+nav ul {
+    display: flex;
+}
+.kasa-logo-red{
+    width: clamp(10rem, 13vw, 20rem);
+}
+nav ul li a{
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    margin-left: clamp(1rem, 2vw, 3rem);
+}
+
+a.active {
+    border-bottom: 1px solid;
+}
+

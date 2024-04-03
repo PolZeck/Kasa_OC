@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 import './Card.css'
 
-const Card = ({ id, cover, title }) => {
+const Card = ({ data }) => {
     const navigate = useNavigate()
 
     const handleImageClick = () => {
-        if (id) {
-            navigate(`/Detail/${id}`)
+        if (data.id) {
+            navigate(`/Detail/${data.id}`)
         } else {
             navigate('*')
         }
@@ -15,10 +15,10 @@ const Card = ({ id, cover, title }) => {
     return (
         <li className="card" onClick={handleImageClick}>
             <div className="card-image-container">
-                <img src={cover} alt="" />
+                <img src={data.cover} alt="" />
             </div>
             <div className="card-title-container">
-                <h2>{title}</h2>
+                <h2>{data.title}</h2>
             </div>
         </li>
     )

@@ -1,0 +1,28 @@
+.about-banner-container {
+    width: 100%;
+    padding-bottom: 70%;
+    position: relative;
+}
+
+@media (min-width: 768px){
+    .about-banner-container {
+        padding-bottom: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .about-banner-container {
+        padding-bottom: 20%;
+    }
+    .about-main{
+        padding: 2% 10%;
+    }
+    
+}
+@media (min-width: 1440px) {
+    .about-main{
+        padding: 2rem 15rem;
+    }
+    
+}

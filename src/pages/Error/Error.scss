@@ -1,0 +1,39 @@
+.error-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem auto;
+}
+
+.error-title {
+    font-weight: 700;
+    font-size: clamp(8rem, 18vw, 30rem);
+}
+
+.error-txt {
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(1.3rem, 3vw, 4rem);
+    margin: 3rem 0;
+}
+
+.error-txt span {
+    display: block;
+}
+
+.error-redirection {
+    font-size: clamp(1.3rem, 3vw, 4rem);
+    text-decoration: underline;
+    margin: 10rem 0;
+}
+
+@media (min-width:1024px) {
+
+    .error-txt span{
+        display: initial;
+    }
+    .error-redirection{
+        margin: 20rem 0;
+
+    }
+}

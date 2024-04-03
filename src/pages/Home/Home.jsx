@@ -1,8 +1,8 @@
 import Banner from '../../components/Banner/Banner'
-import Card from '../../components/Card/Card'
 import jsonData from '../../datas/datas.json'
 import bannerImage from '../../assets/banner-home.webp'
 import './Home.css'
+import Logement from '../../components/Logement/Logement'
 
 const Home = () => {
     return (
@@ -23,14 +23,13 @@ const Home = () => {
             <main className='home-main'>
                 <div className="gallery">
                     <ul>
-                        {jsonData.map((item) => (
-                            <Card
+                        {jsonData.map((item) => {
+                            return <Logement 
+                                mode='card'
                                 key={item.id}
-                                id={item.id}
-                                cover={item.cover}
-                                title={item.title}
-                            />
-                        ))}
+                                data={item}
+                            /> 
+                        })}
                     </ul>
                 </div>
             </main>

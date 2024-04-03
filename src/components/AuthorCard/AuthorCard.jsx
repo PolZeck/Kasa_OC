@@ -18,3 +18,4 @@ const AuthorCard = ({ picture, name }) => {
 }
 
 export default AuthorCard
+
