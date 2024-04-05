@@ -4,6 +4,7 @@ import Tag from '../../Tag/Tag.jsx';
 import Rating from '../../Rating/Rating.jsx';
 import Collapse from '../../Collapse/Collapse.jsx';
 import AuthorCard from '../../AuthorCard/AuthorCard.jsx';
+import './logementDetail.css';
 
 const LogementDetail = ({ data }) => {
     return (

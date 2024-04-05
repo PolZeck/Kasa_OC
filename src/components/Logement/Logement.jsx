@@ -1,6 +1,6 @@
 import Card from './logementCard/Card.jsx';
 import LogementDetail from './logementDetail/logementDetail.jsx'; // Import de la nouvelle composante
-import './Logement.css';
+
 
 const Logement = ({ data, mode }) => {
     if (mode === 'card') {
