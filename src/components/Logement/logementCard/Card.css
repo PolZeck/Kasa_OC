@@ -23,7 +23,7 @@
   height: 100%;
   z-index: 1;
   border-radius: 5%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Dégradé de noir à transparent */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0)); /* Dégradé de noir à transparent */
 }
 
 .card-image-container img {

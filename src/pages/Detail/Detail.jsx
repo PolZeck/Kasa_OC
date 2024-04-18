@@ -1,20 +1,21 @@
-import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import Data from '../../datas/datas.json'
 import Logement from '../../components/Logement/Logement.jsx'
+import Error from '../Error/Error.jsx'
 import './Detail.css'
 
 const Detail = () => {
-    const { id } = useParams()
-    const [selectedData, setSelectedData] = useState(null)
+    const { id } = useParams(); // Récupère l'ID depuis les paramètres de l'URL
+    const navigate = useNavigate(); // Utilise la fonction navigate() du router
+    const selectedData = Data.find((item) => item.id === id); // Recherche de l'élément correspondant dans le tableau Data
 
-    useEffect(() => {
-        const data = Data.find((item) => item.id === id)
-        setSelectedData(data)
-    }, [id])
+    
 
     if (!selectedData) {
-        return null
+        return (
+            <Error/>
+            ); // Renvoie null si les données ne sont pas encore disponibles
     }
 
     return (

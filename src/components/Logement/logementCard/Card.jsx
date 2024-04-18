@@ -3,6 +3,7 @@ import './Card.css'
 
 const Card = ({ data }) => {
     const navigate = useNavigate()
+    
 
     const handleImageClick = () => {
         if (data.id) {
